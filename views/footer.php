@@ -78,17 +78,27 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 <!-- hideshow password -->
-<script type="text/javascript" src="../views/js/hideShowEye.js"></script>
-<script type="text/javascript" src="../views/js/scroll.js"></script>
+<script type="text/javascript" src="js/hideShowEye.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
 
 <!-- xử lí hover menu -->
-<script type="text/javascript" src="../views/js/hoverMenu.js"></script>
+<script type="text/javascript" src="js/hoverMenu.js"></script>
 
 <!-- xử lí modal -->
-<script type="text/javascript" src="../views/js/modal.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
 
 <!-- xử lí userSetting -->
-<script type="text/javascript" src="../views/js/userSetting.js"></script>
+<script type="text/javascript" src="js/userSetting.js"></script>
+
+<!-- xử lí range -->
+<script type="text/javascript" src="js/range.js"></script>
+
+<!-- xử lí rangefilter -->
+<script type="text/javascript" src="js/rangeFilter.js"></script>
+
+<!-- xu lí slider -->
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/slideshow.js"></script>
 
 </body>
 </html>

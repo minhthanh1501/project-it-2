@@ -1,0 +1,25 @@
+label{
+   cursor: pointer;
+}
+input[type=checkbox] {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   padding: 10px;
+   background-color: cyan;
+   border-radius:5%;
+}
+input[type=checkbox]:checked {
+   background-color: magenta;
+   width: 25px;
+   outline: none;
+   border-radius: 100%;
+}
+input[type=checkbox]:checked::before {
+   content:"\2713";
+   color: white;
+   padding: initial;
+   font-weight: bold;
+   position: relative;
+   left: 6px;
+}

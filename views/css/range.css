@@ -1,0 +1,92 @@
+.range{
+	height: 80px;
+	width: 240px;
+	background-color: #f6ba01;
+	border-radius: 10px;
+	padding: 0 70px 0 35px;
+}
+
+.range .range-sliderValue{
+	position: relative;
+	width: 100%;
+}
+
+.range .range-sliderValue span{
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	top: -40px;
+	left: -35px;
+	transform: translateX(-50%) scale(0);
+	line-height: 55px;
+	z-index: 2;
+	transform: bottom; 
+	transition: transform: 0.3s ease-in-out;
+	padding: 0 9px 0 0;
+}
+
+.range .range-sliderValue span.show{
+	transform: translateX(-30%) scale(1);
+}
+
+.range .range-sliderValue span::after{
+	position: absolute;
+	content: "";
+	height: 50px;
+	width: 50px;
+	background-color: #664aff;
+	transform: translateX(-50%) rotate(45deg);
+	z-index: -2;
+	left: 29%;
+	border: 3px solid #fff;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.range .range-field{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.range .range-field .field-value{
+	position: absolute;
+	font-size: 18px; 
+	font-weight: 600;
+	color: #664aff;
+
+}
+
+.range .range-field .field-value.left{
+	left:  -22px;
+}
+
+.range .range-field .field-value.right{
+	right : -63px;
+}
+
+.range .range-field input{
+	-webkit-appearance :  none;
+	height: 3px;
+	width: 100%;
+	background-color: #ddd;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+}
+
+.range .range-field input::-webkit-slider-thumb{
+	-webkit-appearance :  none;
+	height: 20px;
+	width: 20px;
+	background-color: #664aff;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #333;
+}

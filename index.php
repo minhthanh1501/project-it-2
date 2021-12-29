@@ -1,6 +1,6 @@
 <?php 
 
-header('location: admin/')
+header('location: views/');
 
 
  ?>

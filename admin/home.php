@@ -1,45 +1,28 @@
-	<div class="banner">
-		<div class="find">
-			<input type="text" name="" placeholder="   Tìm kiếm trên Modern Fashion...">
-			<button type="submit"></button>
-		</div>
-	</div>
-<?php 
-	$query = "SELECT * FROM product ORDER BY ID DESC";
-	$new_product = pdo_query($query);
- ?>
-	<div class="container-content">
-		<h1 class="content-title">Sản phẩm mới nhất</h1>
-		<div class="list">
-		<?php  foreach ($new_product as  $row) {
-			extract($row);?>
-			<div class="list-item">
-				<div class="list-item-image">
-					<img class="item-image" src="<?php echo $thumbnail ?>" alt="">
-				</div>
-				<div class="list-item-description">
-					<span class="name"><?php echo $title ?></span>
-					<div class="price">
-						<span class="ins"><?php echo $price ?>$</span>
-						<span class="del"><del><?php echo $price_del ?></del></span>
-					</div>
-				</div>
-			</div>
-		<?php }?>
-		</div>
-		<h1 class="content-title">Sản phẩm sale</h1>
-		<div class="list">
-			<div class="list-item">
-				<div class="list-item-image">
-					<img class="item-image" src="https://static.dosi-in.com/images/detailed/42/CDL10_1.jpg" alt="">
-				</div>
-				<div class="list-item-description">
-					<span class="name">hahahaahah</span>
-					<div class="price">
-						<span class="ins">150000$</span>
-						<span class="del"><del>200000$</del></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="banner-black"></div>
+<div class="container">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<?php 
+			if ($_SESSION['user']['role'] == 'seller') {	
+		?>
+		<ul class="navbar-nav">
+			<li class="nav-item ">
+				<a class="nav-link" href="index.php?act=listProduct">Quản lý Sản phẩm</a>
+			</li>
+		</ul>
+		<?php }else if ($_SESSION['user']['role'] == 'admin') {
+			# code...
+		 ?>
+		<ul class="navbar-nav">
+			<li class="nav-item ">
+				<a class="nav-link" href="index.php?act=listCategory">Quản lý danh mục</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="index.php?act=listProduct">Quản lý Sản phẩm</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="index.php?act=listUsers">Quản lý khách hàng</a>
+			</li>
+		</ul>
+		<?php } ?>
+	</nav>
+</div>

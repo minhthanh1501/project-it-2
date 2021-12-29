@@ -1,0 +1,152 @@
+.container-content{
+	margin-top: 100px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 1px solid #c2c2c2;
+    max-width: 1330px;
+}
+
+.find
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 105%;
+	align-items: center;
+	align-content: center;
+}
+.find .find__text
+{
+	max-width: 500px;
+	width: 500px;
+	min-height: 30px;
+	border-radius: 10px;
+	outline: none;
+	padding: 0 6px;
+}
+.find .find__submit
+{
+	background: url('https://aristino.com/Content/desktop/images/126474.svg');
+	width: 27px;
+	background-color: transparent;
+	border: none;
+	margin: 0 6px;
+	background-repeat: no-repeat;
+	align-items: center;
+	align-content: center;
+}
+
+
+
+
+.content-title{
+	padding: 8px 0 20px 0;
+}
+
+.click__act:hover{
+	text-decoration: none;
+	color: #282828;
+}
+
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	/* border: 1px solid #c2c2c2;
+	box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.4); */
+	margin: 0 50px;
+	padding: 8px 8px;
+	height: 1100px;
+
+}
+/* khung sản phẩm */
+.list-item{
+	max-width: 295px;
+	position: relative;
+	height: 450px;
+	padding: 6px;
+}
+
+.item-image{
+	padding: 8px;
+	max-width: 295px;
+	height: 450px;
+}
+
+.list-item-description{
+	padding: 8px;
+	text-align: center;
+	height: 80px;
+}
+
+.description-name{
+	font-weight: 600;
+	font-size: 16px;
+	color: #282828;
+}
+
+.description-price__ins{
+	color: red;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.description-price__del{
+	color: grey;
+}
+
+/* sản phẩm mới */
+.list-item__new{
+	position: absolute;
+	left: 8px;
+	top: 20px;
+	background-color: red;
+	display: inline-block;
+	color: #fff;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	font-weight: 500;
+	padding: 0 4px;
+}
+
+.list-item__new::after{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	border-left: 5px solid transparent;
+	border-top:5px solid red;
+	filter: brightness(60%);
+}
+
+.list-item__new i{
+	font-size: 13px;
+}
+
+/* end sản phẩm mới */
+
+/* sản phẩm sale */
+.list-item__sale{
+	position: absolute;
+	left: 220px;
+	top: 5px;
+	display: inline-block;
+	color: red;
+	font-weight: 700;
+	padding: 0 4px;
+	height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgba(255, 216, 64, 0.94);
+}
+
+.list-item__sale::after{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	border-width: 0 30.7px 10px;
+	border-style: solid;
+	border-color: transparent rgba(255, 216, 64, 0.94) transparent rgba(255, 216, 64, 0.94);
+}
